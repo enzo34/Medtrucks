@@ -28,6 +28,9 @@ use Cake\Event\Event;
 class AppController extends Controller
 {
 
+    public function indexAction($param) {
+        $render= $this->render('/Pages/home');
+    }
     /**
      * Initialization hook method.
      *

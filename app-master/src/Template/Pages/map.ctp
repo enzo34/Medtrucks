@@ -33,9 +33,11 @@ $this->layout = false;
     </head>
 
     <body>
-        <div id="mySidenav" class="sidenav">
-            <input  style="width:80%; "type="text" name="adresse">
-            <input style="width:10%;" id="bouton" class="adresse" type="submit" value="Rechercher adresses">
+        
+        <div id="mySidenav myTopnav" class="sidenav topnav">
+            <input  style="width:80%; "type="text" name="adresse" placeholder="Search..">
+            <input style="width:20%;" id="bouton" class="adresse" type="submit" value=" ">
+            
             <!--<a href="#">Info</a>
             <div id="Info" class="">
             
@@ -47,15 +49,19 @@ $this->layout = false;
             
             </div>
             <button href="#">Naviguer</button>-->
+          
+  <div id="flip">Menu</div>
+<div id="panel">
            <button class="button button4">Filtre</button>
         </div>
-
+ <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
         <div id="map"></div>
         <!-- The Modal -->
 
-        <div id="Option" class="modal">
+<!--        <div id="Option" class="modal">
 
-            <!-- Modal content -->
+             Modal content 
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <p>Some text in the Modal..</p>
@@ -64,11 +70,11 @@ $this->layout = false;
         </div>
         <div id="Naviguer" class="modal">
 
-            <!-- Modal content -->
+             Modal content 
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <p>Some text in the Modal..</p>
-            </div>
+            </div>-->
 
         </div>
         <div id="Filtre" class="modal">
@@ -76,7 +82,16 @@ $this->layout = false;
             <!-- Modal content -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
+                <div class="ui-widget">
+<div id="myDIV" class="header">
+  <h2>Filtrer</h2>
+  <input type="text" id="myInput" placeholder="rechercher..">
+  <span onclick="newElement()" class="addBtn">Ajouter</span>
+</div>
+
+<ul id="myUL">
+ 
+</ul>
             </div>
 
         </div>
@@ -84,8 +99,11 @@ $this->layout = false;
 <?= $this->Html->script('jquery-3.2.1.js') ?>
 <?= $this->Html->script('script.js') ?>
 <?= $this->Html->script('ui.js') ?>
+<?= $this->Html->script('filtre.js') ?>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmZA1UMJ9zVYOMpsW_ohwEk1J2BmG11As&callback=initMap">
         </script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     </body>
 

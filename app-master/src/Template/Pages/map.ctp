@@ -1,5 +1,4 @@
 <?php
-
 $this->layout = false;
 ?>
 

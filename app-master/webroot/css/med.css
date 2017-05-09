@@ -22,7 +22,7 @@ margin-top:80px;
 }
 
 .sidenav button:hover, .offcanvas button:focus {
-    color: #f1f1f1;
+    color: #67b0d1;
 }
 
 
@@ -108,8 +108,9 @@ background-color: rgba(0,0,0,0.4);
 }
 
 .topnav {
-    background-color: #333;
+    background-color: #67b0d1;
     overflow: hidden;
+   border: 1px solid grey;
 }
 
 /* Style the links inside the navigation bar */
@@ -126,7 +127,7 @@ background-color: rgba(0,0,0,0.4);
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
-    color: black;
+    color: #67b0d1;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -160,7 +161,7 @@ ul li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
-    background: #eee;
+    background: #67b0d1;
     font-size: 18px;
     transition: 0.2s;
 
@@ -184,7 +185,7 @@ ul li:hover {
 /* When clicked on, add a background color and strike out text */
 ul li.checked {
     background: #888;
-    color: #fff;
+    color: #f8f8f8;
     text-decoration: line-through;
 }
 
@@ -192,7 +193,7 @@ ul li.checked {
 ul li.checked::before {
     content: '';
     position: absolute;
-    border-color: #fff;
+    border-color: #67b0d1;
     border-style: solid;
     border-width: 0 2px 2px 0;
     top: 10px;
@@ -211,15 +212,15 @@ ul li.checked::before {
 }
 
 .close:hover {
-    background-color: blue;
-    color: white;
+    background-color: #67b0d1;
+    color: #f8f8f8;
 }
 
 /* Style the header */
 .header {
-    background-color: blue;
+    background-color: #67b0d1;
     padding: 30px 40px;
-    color: white;
+    color: #f8f8f8;
     text-align: center;
 }
 
@@ -261,11 +262,17 @@ input {
 #panel, #flip {
     padding: 5px;
     text-align: center;
-    background-color: #e5eecc;
-    border: solid 1px #c3c3c3;
+    background-color: #f8f8f8;
+    border: solid 1px gray;
 }
 
 #panel {
     padding: 50px;
     display: none;
 }
+
+.search{
+        background-color: rgba(255,255,255,0.1);
+}
+
+

@@ -27,16 +27,25 @@ $this->layout = false;
         
     <?= $this->Html->charset() ?>
 
+
+ 
  <?= $this->Html->css('map.css') ?>
  <?= $this->Html->css('med.css') ?>
+ <?= $this->Html->css('googleicon.css') ?>
+
+
        
     </head>
 
     <body>
-        
+         
         <div id="mySidenav myTopnav" class="sidenav topnav">
-            <input  style="width:80%; "type="text" name="adresse" placeholder="Search..">
-            <input style="width:20%;" id="bouton" class="adresse" type="submit" value=" ">
+            
+            <div>
+            <input  class="search" style="width:80%; height: 7%;"type="text" name="adresse" placeholder="rechercher..">
+            <input style="width:20%; height: 7%;" id="bouton" class="material-icons w3-large btsearch" type="submit" value="search">
+            </div>
+        
             
             <!--<a href="#">Info</a>
             <div id="Info" class="">
@@ -50,7 +59,7 @@ $this->layout = false;
             </div>
             <button href="#">Naviguer</button>-->
           
-  <div id="flip">Menu</div>
+            <div id="flip" >Menu</div>
 <div id="panel">
            <button class="button button4">Filtre</button>
         </div>

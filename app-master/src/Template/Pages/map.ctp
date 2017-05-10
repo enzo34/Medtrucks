@@ -20,6 +20,9 @@ $this->layout = false;
 
         <input type="number" name="km" >
         <input id="zone" class="adresse" type="submit" value="Go">
+        
+        
+        <input id="point" class="adresse" type="submit" value="Go">
 
 <?= $this->Html->script('jquery-3.2.1.js') ?>
 

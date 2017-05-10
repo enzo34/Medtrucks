@@ -52,7 +52,7 @@ function center(){
 	map.setCenter(pos);
 
 }
-//fonction qui affiche la MAP
+//fonction qui affiche la Map
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 		center: new google.maps.LatLng(0, 0),

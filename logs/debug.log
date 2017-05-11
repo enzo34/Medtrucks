@@ -1,0 +1,529 @@
+2017-05-10 11:52:58 Notice: Notice (8): Undefined variable: dbh in [/var/www/html/medtrucks/medtrucks/src/Controller/TypeController.php, line 11]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 11
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 13:03:57 Notice: Notice (8): Array to string conversion in [/var/www/html/medtrucks/medtrucks/src/Controller/TypeController.php, line 14]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 13:04:25 Notice: Notice (8): Array to string conversion in [/var/www/html/medtrucks/medtrucks/src/Controller/TypeController.php, line 14]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:01:17 Notice: Notice (8): Undefined offset: 1 in [/var/www/html/medtrucks/medtrucks/vendor/cakephp/cakephp/src/View/View.php, line 1078]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\View\View::_getViewFileName() - CORE/src/View/View.php, line 1078
+Cake\View\View::render() - CORE/src/View/View.php, line 592
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:01:17 Notice: Notice (8): Array to string conversion in [/var/www/html/medtrucks/medtrucks/vendor/cakephp/cakephp/src/View/View.php, line 1081]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\View\View::_getViewFileName() - CORE/src/View/View.php, line 1081
+Cake\View\View::render() - CORE/src/View/View.php, line 592
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:01:56 Notice: Notice (8): Undefined variable: centresante in [/var/www/html/medtrucks/medtrucks/src/Template/Type/tri_centre_sante.ctp, line 2]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - APP/Template/Type/tri_centre_sante.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1011
+Cake\View\View::_render() - CORE/src/View/View.php, line 972
+Cake\View\View::render() - CORE/src/View/View.php, line 596
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:02:08 Notice: Notice (8): Undefined variable: centresante in [/var/www/html/medtrucks/medtrucks/src/Template/Type/tri_centre_sante.ctp, line 2]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - APP/Template/Type/tri_centre_sante.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1011
+Cake\View\View::_render() - CORE/src/View/View.php, line 972
+Cake\View\View::render() - CORE/src/View/View.php, line 596
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:07:53 Notice: Notice (8): Undefined variable: centresante in [/var/www/html/medtrucks/medtrucks/src/Template/Type/tri_centre_sante.ctp, line 2]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - APP/Template/Type/tri_centre_sante.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1011
+Cake\View\View::_render() - CORE/src/View/View.php, line 972
+Cake\View\View::render() - CORE/src/View/View.php, line 596
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:09:47 Notice: Notice (8): Undefined variable: centresante in [/var/www/html/medtrucks/medtrucks/src/Template/Type/tri_centre_sante.ctp, line 2]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - APP/Template/Type/tri_centre_sante.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1011
+Cake\View\View::_render() - CORE/src/View/View.php, line 972
+Cake\View\View::render() - CORE/src/View/View.php, line 596
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:09:49 Notice: Notice (8): Undefined variable: centresante in [/var/www/html/medtrucks/medtrucks/src/Template/Type/tri_centre_sante.ctp, line 2]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - APP/Template/Type/tri_centre_sante.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1011
+Cake\View\View::_render() - CORE/src/View/View.php, line 972
+Cake\View\View::render() - CORE/src/View/View.php, line 596
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:09:49 Notice: Notice (8): Undefined variable: centresante in [/var/www/html/medtrucks/medtrucks/src/Template/Type/tri_centre_sante.ctp, line 2]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - APP/Template/Type/tri_centre_sante.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1011
+Cake\View\View::_render() - CORE/src/View/View.php, line 972
+Cake\View\View::render() - CORE/src/View/View.php, line 596
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:09:49 Notice: Notice (8): Undefined variable: centresante in [/var/www/html/medtrucks/medtrucks/src/Template/Type/tri_centre_sante.ctp, line 2]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - APP/Template/Type/tri_centre_sante.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1011
+Cake\View\View::_render() - CORE/src/View/View.php, line 972
+Cake\View\View::render() - CORE/src/View/View.php, line 596
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:09:49 Notice: Notice (8): Undefined variable: centresante in [/var/www/html/medtrucks/medtrucks/src/Template/Type/tri_centre_sante.ctp, line 2]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - APP/Template/Type/tri_centre_sante.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1011
+Cake\View\View::_render() - CORE/src/View/View.php, line 972
+Cake\View\View::render() - CORE/src/View/View.php, line 596
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:09:49 Notice: Notice (8): Undefined variable: centresante in [/var/www/html/medtrucks/medtrucks/src/Template/Type/tri_centre_sante.ctp, line 2]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - APP/Template/Type/tri_centre_sante.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1011
+Cake\View\View::_render() - CORE/src/View/View.php, line 972
+Cake\View\View::render() - CORE/src/View/View.php, line 596
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:09:49 Notice: Notice (8): Undefined variable: centresante in [/var/www/html/medtrucks/medtrucks/src/Template/Type/tri_centre_sante.ctp, line 2]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - APP/Template/Type/tri_centre_sante.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1011
+Cake\View\View::_render() - CORE/src/View/View.php, line 972
+Cake\View\View::render() - CORE/src/View/View.php, line 596
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:09:49 Notice: Notice (8): Undefined variable: centresante in [/var/www/html/medtrucks/medtrucks/src/Template/Type/tri_centre_sante.ctp, line 2]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - APP/Template/Type/tri_centre_sante.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1011
+Cake\View\View::_render() - CORE/src/View/View.php, line 972
+Cake\View\View::render() - CORE/src/View/View.php, line 596
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:09:50 Notice: Notice (8): Undefined variable: centresante in [/var/www/html/medtrucks/medtrucks/src/Template/Type/tri_centre_sante.ctp, line 2]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - APP/Template/Type/tri_centre_sante.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1011
+Cake\View\View::_render() - CORE/src/View/View.php, line 972
+Cake\View\View::render() - CORE/src/View/View.php, line 596
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:10:07 Notice: Notice (8): Undefined offset: 1 in [/var/www/html/medtrucks/medtrucks/vendor/cakephp/cakephp/src/View/View.php, line 1078]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\View\View::_getViewFileName() - CORE/src/View/View.php, line 1078
+Cake\View\View::render() - CORE/src/View/View.php, line 592
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:10:07 Notice: Notice (8): Array to string conversion in [/var/www/html/medtrucks/medtrucks/vendor/cakephp/cakephp/src/View/View.php, line 1081]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\View\View::_getViewFileName() - CORE/src/View/View.php, line 1081
+Cake\View\View::render() - CORE/src/View/View.php, line 592
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+App\Controller\TypeController::TriCentreSante() - APP/Controller/TypeController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-05-10 14:13:17 Notice: Notice (8): Undefined variable: a in [/var/www/html/medtrucks/medtrucks/src/Template/Type/tri_centre_sante.ctp, line 2]
+Request URL: /Type/TriCentreSante
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - APP/Template/Type/tri_centre_sante.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1011
+Cake\View\View::_render() - CORE/src/View/View.php, line 972
+Cake\View\View::render() - CORE/src/View/View.php, line 596
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+

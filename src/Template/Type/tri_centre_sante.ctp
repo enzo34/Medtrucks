@@ -1,2 +1,2 @@
 <?php
-print_r($a);
+$this->set('b','a');  

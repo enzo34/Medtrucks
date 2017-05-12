@@ -27,13 +27,16 @@ public function TriCentreSante() {
     //remplissage du tableau avec nos variables
              $conf1[] = ["type" => "Features",
                                         "geometry" => [ 'type' => 'Point',
-                                        'coordinates' => [$coordy, $coordx ]],
+
+                                        'coordinates' => [ (float)$coordy, (float)$coordx ]],
                                         "properties" =>["name" => $nom ,"type" => $type ,"adresse" => $adresse]
                            ];
+                           break;
   //  $conf1="{type: Feature, geometry : { type: Point, coordinates :[$coordy, $coordx ] }, properties: { name: $nom type: $type adresse: $adresse}";
 }
+
 //encode notre tableau en json
-  $centresante=json_encode($conf1);
+    $centresante=json_encode($conf1);
   //renvoie la variable $centresante (notre json donc) a la vue sous la forme de la variable $a
   $this->set('a', $centresante);
 

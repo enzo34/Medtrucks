@@ -1,9 +1,9 @@
 <?php
 $this->layout = false;
-print_r($a);
 
+print_r($a);
 ?>
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
 
@@ -26,4 +26,4 @@ print_r($a);
 <?= $this->Html->script('script.js') ?>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmZA1UMJ9zVYOMpsW_ohwEk1J2BmG11As&callback=initMap">
     </script>
-</body> -->
+</body>

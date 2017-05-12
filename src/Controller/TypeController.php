@@ -12,7 +12,7 @@ public function TriCentreSante() {
 //connection a la base de donnée, a changer selon notre base de donnée
   $dbh= new \PDO ("mysql:host=localhost;dbname=medtrucks","root","root");
   //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom pharmacie delannoy)
-  $query1 = ($dbh->query("SELECT * FROM Centre WHERE nom = 'SELARL PHARMACIE DELANNOY' "))->fetchAll($dbh::FETCH_ASSOC);
+  $query1 = ($dbh->query("SELECT * FROM Centre "))->fetchAll($dbh::FETCH_ASSOC);
   //boucle qui recupere les resultat de la requete et rentre dans un tableau prérempli
   foreach ($query1 as $cs){
   //oblige de passer par des variables a cause des index
@@ -25,12 +25,18 @@ public function TriCentreSante() {
     $coordx=$cs['coorx'];
     $coordy=$cs['coory'];
     //remplissage du tableau avec nos variables
-    $conf1[]="  type: Feature, id: $id  geometry: { type: Point, coordinates: $coordx.$coordy  }, properties: { name: $nom type: $type adresse: $adresse}";
+             $conf1[] = ["type" => "Features",
+                                        "geometry" => [ 'type' => 'Point',
+                                        'coordinates' => [$coordy, $coordx ]],
+                                        "properties" =>["name" => $nom ,"type" => $type ,"adresse" => $adresse]
+                           ];
+  //  $conf1="{type: Feature, geometry : { type: Point, coordinates :[$coordy, $coordx ] }, properties: { name: $nom type: $type adresse: $adresse}";
 }
 //encode notre tableau en json
-  $centresante=json_encode($conf1, JSON_FORCE_OBJECT);
+  $centresante=json_encode($conf1);
   //renvoie la variable $centresante (notre json donc) a la vue sous la forme de la variable $a
   $this->set('a', $centresante);
+
 
   //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom ph. launay)
   $query2 = ($dbh->query("SELECT * FROM Centre WHERE nom = 'PH. LAUNAY' "))->fetchAll($dbh::FETCH_ASSOC);
@@ -41,12 +47,16 @@ public function TriCentreSante() {
     $nom=$handicapé['nom'];
     $coordx=$handicapé['coorx'];
     $coordy=$handicapé['coory'];
-    $conf2[]="  type: Feature, id: $id  geometry: { type: Point, coordinates: $coordx.$coordy  }, properties: { name: $nom type: $type adresse: $adresse}";
-
+    $conf2[] = ["type" => "Features",
+                               "geometry" => [ 'type' => 'Point',
+                               'coordinates' => [$coordy, $coordx ]],
+                               "properties" =>["name" => $nom ,"type" => $type ,"adresse" => $adresse]
+                  ];
   }
   $handicape=json_encode($conf2, JSON_FORCE_OBJECT);
     //renvoie la variable $handicape (notre json donc) a la vue sous la forme de la variable $b
   $this->set('b', $handicape);
+
 
   //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom PHARMACIE DROUET)
   $query3 = ($dbh->query("SELECT * FROM Centre WHERE nom = 'PHARMACIE DROUET-PHILIPPE ANNE-MARIE' "))->fetchAll($dbh::FETCH_ASSOC);
@@ -57,11 +67,15 @@ public function TriCentreSante() {
     $nom=$psycho['nom'];
     $coordx=$psycho['coorx'];
     $coordy=$psycho['coory'];
-    $conf3[]="  type: Feature,      id: $id  geometry: {    type: Point,    coordinates: $coordx.$coordy  },  properties: {    name: $nom    type: $type    adresse: $adresse}";
-  }
+    $conf3[] = ["type" => "Features",
+                               "geometry" => [ 'type' => 'Point',
+                               'coordinates' => [$coordy, $coordx ]],
+                               "properties" =>["name" => $nom ,"type" => $type ,"adresse" => $adresse]
+                  ];}
   $psycho=json_encode($conf3, JSON_FORCE_OBJECT);
     //renvoie la variable $psycho (notre json donc) a la vue sous la forme de la variable $c
   $this->set('c', $psycho);
+
 
   //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom PHARMACIE EOZENOU)
   $query4 = ($dbh->query("SELECT * FROM Centre WHERE nom = 'PHARMACIE EOZENOU MARIE-FRANCE'  "))->fetchAll($dbh::FETCH_ASSOC);
@@ -72,11 +86,15 @@ public function TriCentreSante() {
     $nom=$specialiste['nom'];
     $coordx=$specialiste['coorx'];
     $coordy=$specialiste['coory'];
-    $conf4[]="  type: Feature,      id: $id  geometry: {    type: Point,    coordinates: $coordx.$coordy  },  properties: {    name: $nom    type: $type    adresse: $adresse}";
-  }
+    $conf4[] = ["type" => "Features",
+                               "geometry" => [ 'type' => 'Point',
+                               'coordinates' => [$coordy, $coordx ]],
+                               "properties" =>["name" => $nom ,"type" => $type ,"adresse" => $adresse]
+                  ];}
   $specialiste=json_encode($conf4, JSON_FORCE_OBJECT);
     //renvoie la variable $specialiste (notre json donc) a la vue sous la forme de la variable $d
   $this->set('d', $specialiste);
+
 
   //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom PHARMACIE DU PORZAY)
   $query5 = ($dbh->query("SELECT * FROM Centre WHERE nom = 'EURL PHARMACIE DU PORZAY'  "))->fetchAll($dbh::FETCH_ASSOC);
@@ -87,11 +105,20 @@ public function TriCentreSante() {
     $nom=$analyse['nom'];
     $coordx=$analyse['coorx'];
     $coordy=$analyse['coory'];
-    $conf5[]="  type: Feature,      id: $id  geometry: {    type: Point,    coordinates: $coordx.$coordy  },  properties: {    name: $nom    type: $type    adresse: $adresse}";
-  }
+    $conf5[] = ["type" => "Features",
+                               "geometry" => [ 'type' => 'Point',
+                               'coordinates' => [$coordy, $coordx ]],
+                               "properties" =>["name" => $nom ,"type" => $type ,"adresse" => $adresse]
+                  ];}
   $analyse=json_encode($conf5, JSON_FORCE_OBJECT);
     //renvoie la variable $analyse (notre json donc) a la vue sous la forme de la variable $e
   $this->set('e', $analyse);
-}
-}
+
+
+
+//function pour recuperer la liste des different filtres dans la variable $f
+
+    $query6 = ($dbh->query("SELECT DISTINCT type FROM Centre  "))->fetchAll($dbh::FETCH_ASSOC);
+    $this->set('f', $query6);
+}}
 ?>

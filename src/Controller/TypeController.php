@@ -2,92 +2,95 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-
+//todo list : integrer la connection a la bdd par cakephp, renvoyer toutes nos variables vers notre vue principale(donc home)
+//vue correspondante a ce controller NOMDETONVIRTUALHOST/Type/TriCentreSante
 class TypeController extends AppController {
 
 
 
 public function TriCentreSante() {
+//connection a la base de donnée, a changer selon notre base de donnée
   $dbh= new \PDO ("mysql:host=localhost;dbname=medtrucks","root","root");
-  $sth = ($dbh->query("SELECT * FROM Centre "))->fetchAll($dbh::FETCH_ASSOC);
-  foreach ($sth as $tab){
-    $id=$tab['id'];
-    $type=$tab['type'];
-    $adresse1=$tab['rue'];
-    $adresse2=$tab['cpville'];
+  //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom pharmacie delannoy)
+  $query1 = ($dbh->query("SELECT * FROM Centre WHERE nom = 'SELARL PHARMACIE DELANNOY' "))->fetchAll($dbh::FETCH_ASSOC);
+  //boucle qui recupere les resultat de la requete et rentre dans un tableau prérempli
+  foreach ($query1 as $cs){
+  //oblige de passer par des variables a cause des index
+    $id=$cs['id'];
+    $type=$cs['type'];
+    $adresse1=$cs['rue'];
+    $adresse2=$cs['cpville'];
     $adresse=$adresse1.$adresse2;
-    $nom=$tab['nom'];
-    $coordx=$tab['coorx'];
-    $coordy=$tab['coory'];
-    $conf[]="  type: Feature, id: $id  geometry: { type: Point, coordinates: $coordx.$coordy  }, properties: { name: $nom type: $type adresse: $adresse}";
+    $nom=$cs['nom'];
+    $coordx=$cs['coorx'];
+    $coordy=$cs['coory'];
+    //remplissage du tableau avec nos variables
+    $conf1[]="  type: Feature, id: $id  geometry: { type: Point, coordinates: $coordx.$coordy  }, properties: { name: $nom type: $type adresse: $adresse}";
 }
+//encode notre tableau en json
+  $centresante=json_encode($conf1, JSON_FORCE_OBJECT);
+  //renvoie la variable $centresante (notre json donc) a la vue sous la forme de la variable $a
+  $this->set('a', $centresante);
 
-  $json=json_encode($conf, JSON_FORCE_OBJECT);
-  $this->set('a', $json);
-  //  $this->render('/Pages/home');
-}
+  //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom ph. launay)
+  $query2 = ($dbh->query("SELECT * FROM Centre WHERE nom = 'PH. LAUNAY' "))->fetchAll($dbh::FETCH_ASSOC);
+  foreach ($query2 as $handicapé){
+    $id=$handicapé['id'];
+    $type=$handicapé['type'];
+    $adresse=$handicapé['rue'].$handicapé['cpville'];
+    $nom=$handicapé['nom'];
+    $coordx=$handicapé['coorx'];
+    $coordy=$handicapé['coory'];
+    $conf2[]="  type: Feature, id: $id  geometry: { type: Point, coordinates: $coordx.$coordy  }, properties: { name: $nom type: $type adresse: $adresse}";
 
-public function TriHandicapés() {
-  $dbh= new \PDO ("mysql:host=localhost;dbname=testmedtrucks","root","root");
-  $sth = ($dbh->query("SELECT * FROM Centre WHERE categorie = '2'  "))->fetchAll($dbh::FETCH_ASSOC);
-  foreach ($sth as $tab){
-    $id=$tab['id'];
-    $type=$tab['type'];
-    $adresse=$tab['rue']+$tab['cpville'];
-    $nom=$tab['nom'];
-    $coordx=$tab['coorx'];
-    $coordy=$tab['coory'];
-    $conf[]="  type: Feature,      id: $id  geometry: {    type: Point,    coordinates: $coordx.$coordy  },  properties: {    name: $nom    type: $type    adresse: $adresse}";
   }
-  $json=json_encode($conf, JSON_FORCE_OBJECT);
+  $handicape=json_encode($conf2, JSON_FORCE_OBJECT);
+    //renvoie la variable $handicape (notre json donc) a la vue sous la forme de la variable $b
   $this->set('b', $handicape);
-}
 
-public function TriPsycho() {
-  $dbh= new \PDO ("mysql:host=localhost;dbname=testmedtrucks","root","root");
-  $sth = ($dbh->query("SELECT * FROM Centre WHERE categorie = '3'  "))->fetchAll($dbh::FETCH_ASSOC);
-  foreach ($sth as $tab){
-    $id=$tab['id'];
-    $type=$tab['type'];
-    $adresse=$tab['rue']+$tab['cpville'];
-    $nom=$tab['nom'];
-    $coordx=$tab['coorx'];
-    $coordy=$tab['coory'];
-    $conf[]="  type: Feature,      id: $id  geometry: {    type: Point,    coordinates: $coordx.$coordy  },  properties: {    name: $nom    type: $type    adresse: $adresse}";
+  //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom PHARMACIE DROUET)
+  $query3 = ($dbh->query("SELECT * FROM Centre WHERE nom = 'PHARMACIE DROUET-PHILIPPE ANNE-MARIE' "))->fetchAll($dbh::FETCH_ASSOC);
+  foreach ($query3 as $psycho){
+    $id=$psycho['id'];
+    $type=$psycho['type'];
+    $adresse=$psycho['rue'].$psycho['cpville'];
+    $nom=$psycho['nom'];
+    $coordx=$psycho['coorx'];
+    $coordy=$psycho['coory'];
+    $conf3[]="  type: Feature,      id: $id  geometry: {    type: Point,    coordinates: $coordx.$coordy  },  properties: {    name: $nom    type: $type    adresse: $adresse}";
   }
-  $json=json_encode($conf, JSON_FORCE_OBJECT);
+  $psycho=json_encode($conf3, JSON_FORCE_OBJECT);
+    //renvoie la variable $psycho (notre json donc) a la vue sous la forme de la variable $c
   $this->set('c', $psycho);
-}
 
-public function TriSpecialiste() {
-  $dbh= new \PDO ("mysql:host=localhost;dbname=testmedtrucks","root","root");
-  $sth = ($dbh->query("SELECT * FROM Centre WHERE categorie = '4'  "))->fetchAll($dbh::FETCH_ASSOC);
-  foreach ($sth as $tab){
-    $id=$tab['id'];
-    $type=$tab['type'];
-    $adresse=$tab['rue']+$tab['cpville'];
-    $nom=$tab['nom'];
-    $coordx=$tab['coorx'];
-    $coordy=$tab['coory'];
-    $conf[]="  type: Feature,      id: $id  geometry: {    type: Point,    coordinates: $coordx.$coordy  },  properties: {    name: $nom    type: $type    adresse: $adresse}";
+  //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom PHARMACIE EOZENOU)
+  $query4 = ($dbh->query("SELECT * FROM Centre WHERE nom = 'PHARMACIE EOZENOU MARIE-FRANCE'  "))->fetchAll($dbh::FETCH_ASSOC);
+  foreach ($query4 as $specialiste){
+    $id=$specialiste['id'];
+    $type=$specialiste['type'];
+    $adresse=$specialiste['rue'].$specialiste['cpville'];
+    $nom=$specialiste['nom'];
+    $coordx=$specialiste['coorx'];
+    $coordy=$specialiste['coory'];
+    $conf4[]="  type: Feature,      id: $id  geometry: {    type: Point,    coordinates: $coordx.$coordy  },  properties: {    name: $nom    type: $type    adresse: $adresse}";
   }
-  $json=json_encode($conf, JSON_FORCE_OBJECT);
+  $specialiste=json_encode($conf4, JSON_FORCE_OBJECT);
+    //renvoie la variable $specialiste (notre json donc) a la vue sous la forme de la variable $d
   $this->set('d', $specialiste);
-}
 
-public function TriAnalyse() {
-  $dbh= new \PDO ("mysql:host=localhost;dbname=testmedtrucks","root","root");
-  $sth = ($dbh->query("SELECT * FROM Centre WHERE categorie = '5'  "))->fetchAll($dbh::FETCH_ASSOC);
-  foreach ($sth as $tab){
-    $id=$tab['id'];
-    $type=$tab['type'];
-    $adresse=$tab['rue']+$tab['cpville'];
-    $nom=$tab['nom'];
-    $coordx=$tab['coorx'];
-    $coordy=$tab['coory'];
-    $conf[]="  type: Feature,      id: $id  geometry: {    type: Point,    coordinates: $coordx.$coordy  },  properties: {    name: $nom    type: $type    adresse: $adresse}";
+  //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom PHARMACIE DU PORZAY)
+  $query5 = ($dbh->query("SELECT * FROM Centre WHERE nom = 'EURL PHARMACIE DU PORZAY'  "))->fetchAll($dbh::FETCH_ASSOC);
+  foreach ($query5 as $analyse){
+    $id=$analyse['id'];
+    $type=$analyse['type'];
+    $adresse=$analyse['rue'].$analyse['cpville'];
+    $nom=$analyse['nom'];
+    $coordx=$analyse['coorx'];
+    $coordy=$analyse['coory'];
+    $conf5[]="  type: Feature,      id: $id  geometry: {    type: Point,    coordinates: $coordx.$coordy  },  properties: {    name: $nom    type: $type    adresse: $adresse}";
   }
-  $json=json_encode($conf, JSON_FORCE_OBJECT);
+  $analyse=json_encode($conf5, JSON_FORCE_OBJECT);
+    //renvoie la variable $analyse (notre json donc) a la vue sous la forme de la variable $e
   $this->set('e', $analyse);
 }
 }

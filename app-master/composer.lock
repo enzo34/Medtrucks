@@ -888,16 +888,16 @@
     "packages-dev": [
         {
             "name": "cakephp/bake",
-            "version": "1.3.3",
+            "version": "1.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/bake.git",
-                "reference": "bfa50d866b41cdf2ed43a360a213c63b0cd955e7"
+                "reference": "3a6bdcab9e4820e1e26d621b600729b0fcd36937"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/bake/zipball/bfa50d866b41cdf2ed43a360a213c63b0cd955e7",
-                "reference": "bfa50d866b41cdf2ed43a360a213c63b0cd955e7",
+                "url": "https://api.github.com/repos/cakephp/bake/zipball/3a6bdcab9e4820e1e26d621b600729b0fcd36937",
+                "reference": "3a6bdcab9e4820e1e26d621b600729b0fcd36937",
                 "shasum": ""
             },
             "require": {
@@ -931,31 +931,31 @@
                 "bake",
                 "cakephp"
             ],
-            "time": "2017-03-15T20:24:03+00:00"
+            "time": "2017-05-07T01:46:45+00:00"
         },
         {
             "name": "cakephp/debug_kit",
-            "version": "3.9.5",
+            "version": "3.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/debug_kit.git",
-                "reference": "edc44b92260ebb6881c01fc40d271a9074b01a94"
+                "reference": "aec9876daa0515c1776db4fc59c260ead1a88d3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/edc44b92260ebb6881c01fc40d271a9074b01a94",
-                "reference": "edc44b92260ebb6881c01fc40d271a9074b01a94",
+                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/aec9876daa0515c1776db4fc59c260ead1a88d3e",
+                "reference": "aec9876daa0515c1776db4fc59c260ead1a88d3e",
                 "shasum": ""
             },
             "require": {
-                "cakephp/cakephp": "^3.2.7",
+                "cakephp/cakephp": "^3.4.0",
                 "cakephp/chronos": "^1.0.0",
                 "cakephp/plugin-installer": "^1.0.0",
                 "composer/composer": "^1.3.0",
                 "jdorn/sql-formatter": "^1.2.0"
             },
             "require-dev": {
-                "cakephp/cakephp-codesniffer": "^2.1.0",
+                "cakephp/cakephp-codesniffer": "^3.0",
                 "phpunit/phpunit": "<6.0"
             },
             "suggest": {
@@ -990,7 +990,7 @@
                 "debug",
                 "kit"
             ],
-            "time": "2017-05-02T01:12:10+00:00"
+            "time": "2017-05-10T02:01:28+00:00"
         },
         {
             "name": "composer/ca-bundle",

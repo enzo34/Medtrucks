@@ -5,7 +5,9 @@ $this->layout = false;
 <!--
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
+<?= $this->Html->charset() ?>
+<?= $this->Html->css('map.css') ?>
 
 
  
@@ -16,9 +18,14 @@ $this->layout = false;
     <div id ="global"></div>
     <div id="map"></div>
 
+        <input type="text" name="adresse">
+        <input id="bouton" class="adresse" type="submit" value="Rechercher adresses">
 
-<input type="text" name="adresse">
-<input id="bouton" class="adresse" type="submit" value="Rechercher adresses">
+        <input type="number" name="km" >
+        <input id="zone" class="adresse" type="submit" value="Go">
+        
+        
+        <input id="point" class="adresse" type="submit" value="Go">
 
   </body>-->
 <!DOCTYPE html>
@@ -110,6 +117,7 @@ $this->layout = false;
         </div>
 
 <?= $this->Html->script('jquery-3.2.1.js') ?>
+
 <?= $this->Html->script('script.js') ?>
 <?= $this->Html->script('ui.js') ?>
 <?= $this->Html->script('filtre.js') ?>

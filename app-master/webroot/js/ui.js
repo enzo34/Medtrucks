@@ -13,6 +13,7 @@ $("button").click(function() {
 
 });
 
+
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -52,9 +53,9 @@ function newElement() {
   } else {
     document.getElementById("myUL").appendChild(li);
   }
-  document.getElementById("myInput").value = "";
+//  document.getElementById("myInput").value = "";
 
-  var span = document.createElement("SPAN");
+  var span = document.createElement("button");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
@@ -67,3 +68,8 @@ function newElement() {
     }
   }
 }
+
+
+
+
+

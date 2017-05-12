@@ -42,11 +42,15 @@ $this->layout = false;
         <div id="mySidenav myTopnav" class="sidenav topnav">
             
             <div>
-            <input  class="search" style="width:80%; height: 7%;"type="text" name="adresse" placeholder="rechercher..">
-            <input style="width:20%; height: 7%;" id="bouton" class="material-icons w3-large btsearch" type="submit" value="search">
+            <input  class="search" style="width:80%; height: 10%;"type="text" name="adresse" placeholder="rechercher..">
+            <input  style="width:20%;" id="bouton" class="material-icons w3-large btns" type="submit" value="search">
+            </div>
+            
+            <div>
+                
             </div>
         
-            
+            <br>
             <!--<a href="#">Info</a>
             <div id="Info" class="">
             
@@ -59,10 +63,11 @@ $this->layout = false;
             </div>
             <button href="#">Naviguer</button>-->
           
-            <div id="flip" >Menu</div>
+            <div class="espace"  id="flip" >Menu</div>
 <div id="panel">
            <button class="button button4">Filtre</button>
         </div>
+            <input onclick="javascript:location.href='https://www.medtrucks.com/index.html'" style="width:100%;" id="bouton" class="material-icons w3-xxxlarge btnh "  type="submit" value="home">
  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
         <div id="map"></div>
@@ -85,7 +90,6 @@ $this->layout = false;
                 <p>Some text in the Modal..</p>
             </div>-->
 
-        </div>
         <div id="Filtre" class="modal">
 
             <!-- Modal content -->
@@ -94,8 +98,8 @@ $this->layout = false;
                 <div class="ui-widget">
 <div id="myDIV" class="header">
   <h2>Filtrer</h2>
-  <input type="text" id="myInput" placeholder="rechercher..">
-  <span onclick="newElement()" class="addBtn">Ajouter</span>
+  <input style="width: 80%;"type="text" id="myInput" placeholder="rechercher..">
+  <span id="btn" style="width: 20%;" onclick="newElement()" class="addBtn">Ajouter</span>
 </div>
 
 <ul id="myUL">

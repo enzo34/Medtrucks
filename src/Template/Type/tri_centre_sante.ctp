@@ -1,6 +1,7 @@
 <?php
 $this->layout = false;
 print_r($a);
+
 ?>
 <!-- <!DOCTYPE html>
 <html>

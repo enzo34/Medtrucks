@@ -1,10 +1,7 @@
 <?php
-
 namespace App\Controller;
-
 use App\Controller\AppController;
 use Zend\Diactoros\Response\JsonResponse;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -12,9 +9,7 @@ use Zend\Diactoros\Response\JsonResponse;
  */
 /**Ceci et un Controller qui s'occupe de prendre et de répertorier tout les centres Hospitaliers**/
 class HopitauxController extends AppController {
-
     public function getcentres() {
-
         $data = [[
         "id" => 1,
         "type" => "typeDeBatiment",
@@ -31,13 +26,10 @@ class HopitauxController extends AppController {
                 ]
         ],
             ];
-
         $this->autoRender = FALSE;
-
         echo json_encode($data);
     }
  public function getPsychiatrie() {
-
         $data = [[
         "id" => 1,
         "type" => "typeDeBatiment",
@@ -54,10 +46,7 @@ class HopitauxController extends AppController {
                 ]
         ],
             ];
-
         $this->autoRender = FALSE;
-
         echo json_encode($data);
     }
 }
-

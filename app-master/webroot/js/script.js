@@ -58,6 +58,10 @@ function initMap() {
 		center: new google.maps.LatLng(48.866667,  2.333333),
           	zoom: 5
         });
+
 }
 
           
+
+
+

@@ -2,7 +2,7 @@
 namespace App\Controller;
 $sql = new \PDO ("mysql:host=localhost;dbname=medtrucks","root","root");
 use App\Controller\AppController;
-Use Cake\Datasources\Connection;
+
 
 
 class NewController extends AppController {
@@ -10,8 +10,10 @@ class NewController extends AppController {
 
 public function index() {
     //pour retrouver tous les centre
-$dsds=Cake\Datasources\Connection;
-    $stmt = $dsds->query('SELECT * FROM Centre');
+    ////connection a la base de donnée, a changer selon notre base de donnée
+      $dbh= new \PDO ("mysql:host=localhost;dbname=medtrucks","root","root");
+  $stmt  = ($dbh->query("SELECT * FROM Centre WHERE nom ='PHARMACIE DROUET-PHILIPPE ANNE-MARIE'"))->fetchAll($dbh::FETCH_ASSOC);
+
 }
 public function add(){
 

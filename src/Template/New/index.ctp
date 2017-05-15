@@ -22,7 +22,7 @@
 
 
     //Boucle pour afficher tous les enregistrements récupérés
-    foreach( $Centre as $user ){
+    foreach( $$stmt as $user ){
 
         echo "<tr>";
             echo "<td>{$user['id']}</td>";

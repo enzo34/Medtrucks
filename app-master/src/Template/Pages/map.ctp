@@ -7,7 +7,7 @@ $this->layout = false;
 <html>
     <head>
 <?= $this->Html->charset() ?>
-<?= $this->Html->css('map.css') ?>
+
 
 
  

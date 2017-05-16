@@ -1,11 +1,18 @@
 #h3,#global{
-    
 
-color:#cf2a0e;
-    
-    
+
+    color:#cf2a0e;
+
+
 }
 #map {
-        height: 400px;
-        width: 100%;
-       }
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+}

@@ -55,9 +55,13 @@ function center(){
 //fonction qui affiche la Map
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
-		center: new google.maps.LatLng(0, 0),
-          	zoom: 2
+		center: new google.maps.LatLng(48.866667,  2.333333),
+          	zoom: 5
         });
+
 }
 
           
+
+
+

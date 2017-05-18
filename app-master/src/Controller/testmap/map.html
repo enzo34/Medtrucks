@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+		<meta charset="UTF-8" />
+		<title>Test Map</title>
+		<style>
+			html, body {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			#EmplacementDeMaCarte {
+				height: 70%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="EmplacementDeMaCarte"></div>
+		<script>
+			function initialisation(){
+				var optionsCarte = {
+					zoom: 8,
+					center: new google.maps.LatLng(47.389982, 0.688877),
+				}
+        var optionCercle = {
+          map:maCarte,
+          center:optionCercle.getCenter(),
+          radius:500;
+        }
+      //  var monCercle = new google.maps.Circle(optionCercle);
+				var maCarte = new google.maps.Map(document.getElementById("EmplacementDeMaCarte"), optionCercle);
+
+			}
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLaAEwqhwWllUQgTmt8LDKhqt9J1qrnnk&callback=initialisation"></script>
+	</body>
+</html>

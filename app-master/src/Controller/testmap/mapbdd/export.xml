@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>48.572115</coordinates>
+      <coordinates>-4.322277</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIO-CULTUREL</name>
+      <type>Centre Social</type>
+      <adresse>DES DEPORTES29260 LESNEVEN</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>48.407723</coordinates>
+      <coordinates>-4.39467</coordinates>
+    </geometry>
+    <properties>
+      <name>&quot;CTRE SOCIO-CULTUREL &quot;&quot;J.JACOLOT&quot;&quot;&quot;</name>
+      <type>Centre Social</type>
+      <adresse>VINCENT JEZEQUEL29480 LE RELECQ KERHUON</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>44.349382</coordinates>
+      <coordinates>2.575987</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIAL DE GOURGAN</name>
+      <type>Centre Social</type>
+      <adresse>DE LATTRE DE TASSIGN12000 RODEZ</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>44.36552</coordinates>
+      <coordinates>2.593079</coordinates>
+    </geometry>
+    <properties>
+      <name>CTRE SOCIAL ET SOCIO CULTUREL</name>
+      <type>Centre Social</type>
+      <adresse>DES NARCISSES12850 ONET LE CHATEAU</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>44.560308</coordinates>
+      <coordinates>2.251828</coordinates>
+    </geometry>
+    <properties>
+      <name>CTRE SOC DU BASSIN AVEYRONNAIS</name>
+      <type>Centre Social</type>
+      <adresse>CABROL12300 DECAZEVILLE</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>42.941887</coordinates>
+      <coordinates>1.813286</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIAL RURAL</name>
+      <type>Centre Social</type>
+      <adresse>DU FOIRAIL12310 LAISSAC</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>44.314051</coordinates>
+      <coordinates>2.535385</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIAL</name>
+      <type>Centre Social</type>
+      <adresse>DE L&#x27;ESPLANADE12450 LUC LA PRIMAUBE</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>44.349382</coordinates>
+      <coordinates>2.575987</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIAL DE SAINT ELOI</name>
+      <type>Centre Social</type>
+      <adresse>PAUL RAMADIER12000 RODEZ</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>44.349382</coordinates>
+      <coordinates>2.575987</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIAL ET D&#x27;ANIMATION</name>
+      <type>Centre Social</type>
+      <adresse>SAINTE BARBE12000 RODEZ</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>44.349736</coordinates>
+      <coordinates>2.03538</coordinates>
+    </geometry>
+    <properties>
+      <name>PRE CENTRE SOCIAL</name>
+      <type>Centre Social</type>
+      <adresse>DES PENITENTS NOIRS12200 VILLEFRANCHE DE ROUERGUE</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>43.78605</coordinates>
+      <coordinates>5.765481</coordinates>
+    </geometry>
+    <properties>
+      <name>ASSOC. CTRE SOCIAL STE TULLE</name>
+      <type>Centre Social</type>
+      <adresse>DE LA REPUBLIQUE04220 STE TULLE</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>44.534603</coordinates>
+      <coordinates>5.824037</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIAL RURAL CANTONAL</name>
+      <type>Centre Social</type>
+      <adresse>QUARTIER RAMBOIS05400 VEYNES</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>45.347859</coordinates>
+      <coordinates>0.36837</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE MULTISERVICE</name>
+      <type>Centre Social</type>
+      <adresse>AQUITAINE24320 VERTEILLAC</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>45.346686</coordinates>
+      <coordinates>0.868571</coordinates>
+    </geometry>
+    <properties>
+      <name>CTRE SOCIAL CCAS</name>
+      <type>Centre Social</type>
+      <adresse>BOURG24460 NEGRONDES</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>44.911456</coordinates>
+      <coordinates>2.436916</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIAL DE MARMIERS</name>
+      <type>Centre Social</type>
+      <adresse>RAYMOND CORTAT15000 AURILLAC</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>45.034018</coordinates>
+      <coordinates>3.079066</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIAL</name>
+      <type>Centre Social</type>
+      <adresse>DU DR MALLET15100 ST FLOUR</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>45.347295</coordinates>
+      <coordinates>0.366929</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE MULTISERVICE</name>
+      <type>Centre Social</type>
+      <adresse>AQUITAINE24320 VERTEILLAC</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>45.345062</coordinates>
+      <coordinates>0.863839</coordinates>
+    </geometry>
+    <properties>
+      <name>CTRE SOCIAL CCAS</name>
+      <type>Centre Social</type>
+      <adresse>BOURG24460 NEGRONDES</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>47.341102</coordinates>
+      <coordinates>5.047152</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIAL BALZAC</name>
+      <type>Centre Social</type>
+      <adresse>BALZAC21000 DIJON</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>47.312985</coordinates>
+      <coordinates>5.018338</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIAL BOURROCHES</name>
+      <type>Centre Social</type>
+      <adresse>DE LA CORVEE21000 DIJON</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>47.319861</coordinates>
+      <coordinates>5.065385</coordinates>
+    </geometry>
+    <properties>
+      <name>CTRE SOCIAL DES GRESILLES</name>
+      <type>Centre Social</type>
+      <adresse>JEAN 2321000 DIJON</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>47.316785</coordinates>
+      <coordinates>5.004798</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIAL FNE D&#x27;OUCHE</name>
+      <type>Centre Social</type>
+      <adresse>DU ROUSSILLON21000 DIJON</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>47.301142</coordinates>
+      <coordinates>5.041164</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIAL DU PARC</name>
+      <type>Centre Social</type>
+      <adresse>MAURICE RAVEL21000 DIJON</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>47.301413</coordinates>
+      <coordinates>5.013571</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIAL DU MAIL</name>
+      <type>Centre Social</type>
+      <adresse>DU MAIL21300 CHENOVE</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>47.294299</coordinates>
+      <coordinates>5.006188</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIAL ARMAND THIBAUT</name>
+      <type>Centre Social</type>
+      <adresse>ARMAND THIBAUT21300 CHENOVE</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>47.284023</coordinates>
+      <coordinates>5.058672</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE SOCIAL DE LA Z.A.C.</name>
+      <type>Centre Social</type>
+      <adresse>BIEF DU MOULIN21600 LONGVIC</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>45.347295</coordinates>
+      <coordinates>0.366929</coordinates>
+    </geometry>
+    <properties>
+      <name>CENTRE MULTISERVICE</name>
+      <type>Centre Social</type>
+      <adresse>AQUITAINE24320 VERTEILLAC</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>45.346686</coordinates>
+      <coordinates>0.868571</coordinates>
+    </geometry>
+    <properties>
+      <name>CTRE SOCIAL CCAS</name>
+      <type>Centre Social</type>
+      <adresse>BOURG24460 NEGRONDES</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>49.087296</coordinates>
+      <coordinates>0.593955</coordinates>
+    </geometry>
+    <properties>
+      <name>DELEGATION LOCALE CRF DE BERNAY</name>
+      <type>Centre Social</type>
+      <adresse>GEORGES MILVILLE27302 BERNAY CEDEX</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>49.159689</coordinates>
+      <coordinates>1.334382</coordinates>
+    </geometry>
+    <properties>
+      <name>DELEGATION LOCALE CRF GAILLON</name>
+      <type>Centre Social</type>
+      <adresse>DU FOUR A BAON27600 GAILLON</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>49.324658</coordinates>
+      <coordinates>1.626332</coordinates>
+    </geometry>
+    <properties>
+      <name>DELEGATION LOCALE CRF ETREPAGNY</name>
+      <type>Centre Social</type>
+      <adresse>DE LONCHAMP27150 ETREPAGNY</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>49.164388</coordinates>
+      <coordinates>-0.423089</coordinates>
+    </geometry>
+    <properties>
+      <name>DELEGATION LOCALE CRF DU SUD DE L&#x27;EURE</name>
+      <type>Centre Social</type>
+      <adresse>FERNAND PREVOST27160 BRETEUIL SUR ITON</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>48.738738</coordinates>
+      <coordinates>0.926794</coordinates>
+    </geometry>
+    <properties>
+      <name>DELEGATION LOCALE CRF VERNEUIL S/ AVRE</name>
+      <type>Centre Social</type>
+      <adresse>SAINT JEAN27130 VERNEUIL SUR AVRE</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>49.359399</coordinates>
+      <coordinates>0.504589</coordinates>
+    </geometry>
+    <properties>
+      <name>DELEGATION LOCALE CRF PONT-AUDEMER</name>
+      <type>Centre Social</type>
+      <adresse>DES PAPETIERS27503 PONT AUDEMER CEDEX</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>49.027272</coordinates>
+      <coordinates>1.159704</coordinates>
+    </geometry>
+    <properties>
+      <name>DELEGATION LOCALE CRF EVREUX</name>
+      <type>Centre Social</type>
+      <adresse>DE LA ROCHETTE27000 EVREUX</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>49.088153</coordinates>
+      <coordinates>1.493976</coordinates>
+    </geometry>
+    <properties>
+      <name>DELEGATION DEPARTEMENTALE CRF EURE</name>
+      <type>Centre Social</type>
+      <adresse>MAL MONTGOMERY27200 VERNON</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>49.207663</coordinates>
+      <coordinates>1.16872</coordinates>
+    </geometry>
+    <properties>
+      <name>DELEGATION LOCALE CRF DE LOUVIERS</name>
+      <type>Centre Social</type>
+      <adresse>WINSTON CHURCHILL27400 LOUVIERS</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>49.158915</coordinates>
+      <coordinates>1.334402</coordinates>
+    </geometry>
+    <properties>
+      <name>PIF CENTRE SOCIAL CONDORCET</name>
+      <type>Centre Social</type>
+      <adresse>JEAN MOULIN27600 GAILLON</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>49.318056</coordinates>
+      <coordinates>1.226662</coordinates>
+    </geometry>
+    <properties>
+      <name>PIF ESPACE DES 2 RIVES</name>
+      <type>Centre Social</type>
+      <adresse>DE LA FRATERNITE27590 PITRES</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>49.254273</coordinates>
+      <coordinates>1.438313</coordinates>
+    </geometry>
+    <properties>
+      <name>PIF LES ANDELYS</name>
+      <type>Centre Social</type>
+      <adresse>DES OISEAUX27700 LES ANDELYS</adresse>
+    </properties>
+  </row>
+  <row>
+    <type>Features</type>
+    <geometry>
+      <type>Point</type>
+      <coordinates>49.214533</coordinates>
+      <coordinates>1.170032</coordinates>
+    </geometry>
+    <properties>
+      <name>PIF CENTRE SOCIAL PASTEL LOUVIERS</name>
+      <type>Centre Social</type>
+      <adresse>LEOPOLD MARCEL27400 LOUVIERS</adresse>
+    </properties>
+  </row>
+</root>

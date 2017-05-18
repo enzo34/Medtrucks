@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Medtrucks</title>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>Carte</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 48.536716, lng: -4.311649};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: uluru
+        });
+        var Cercle = new google.maps.Circle({
+          map:map,
+          center:uluru,
+          radius:2000
+        });
+
+  var second = {
+    JSON.parse('Export1.json');
+  }
+      map.data.addGeoJson(second);
+
+    //   var json = {
+    //     map.data.loadGeoJson("Export.json");
+    //   }
+    // map.data.addGeoJson(json);
+  //   var script = document.createElement('script');
+  // script.src = 'Export1.json';
+  // document.getElementsByTagName('head')[0].appendChild(script);
+  //
+  //   function eqfeed_callback(response) {
+  //     map.data.addGeoJson(response);
+  //   }
+    //
+    // map.data.addGeoJson(second);
+    // map.data.addGeoJson(tempObject);
+
+
+//         var marker = new google.maps.Marker({
+//           position: uluru,
+//           map: map,
+//           map.data.addGeoJson({"type":"FeatureCollection","metadata":{"generated":1495014876000,"url":"https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp","title":"USGS Magnitude 2.5+ Earthquakes, Past Week","status":200,"api":"1.5.7","count":256},"features":[{"type":"Feature","properties":{"mag":2.5,"place":"38km SSW of Austin, Nevada","time":1495012851560,"updated":1495013049098,"tz":-480,"url":"https://earthquake.usgs.gov/earthquakes/eventpage/nn00589345","detail":"https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nn00589345.geojsonp","felt":null,"cdi":null,"mmi":null,"alert":null,"status":"automatic","tsunami":0,"sig":96,"net":"nn","code":"00589345","ids":",nn00589345,","sources":",nn,","types":",geoserve,origin,phase-data,","nst":7,"dmin":1.902,"rms":null,"gap":173.25,"magType":"ml","type":"earthquake","title":"M 2.5 - 38km SSW of Austin, Nevada"},"geometry":{"type":"Point","coordinates":[-117.1783,39.1528,15.4]},"id":"nn00589345"},
+//           {"type":"Feature","properties":{"mag":5.2,"place":"Off the coast of Guerrero, Mexico","time":1495012409080,"updated":1495013603040,"tz":-420,"url":"https://earthquake.usgs.gov/earthquakes/eventpage/us10008syx","detail":"https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us10008syx.geojsonp","felt":null,"cdi":null,"mmi":null,"alert":null,"status":"reviewed","tsunami":0,"sig":416,"net":"us","code":"10008syx","ids":",us10008syx,","sources":",us,","types":",geoserve,origin,phase-data,","nst":null,"dmin":5.485,"rms":0.89,"gap":179,"magType":"mb","type":"earthquake","title":"M 5.2 - Off the coast of Guerrero, Mexico"},"geometry":{"type":"Point","coordinates":[-103.2482,14.4103,10]},"id":"us10008syx"},
+// );
+//         });
+
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLaAEwqhwWllUQgTmt8LDKhqt9J1qrnnk&callback=initMap">
+    </script>
+  </body>
+</html>

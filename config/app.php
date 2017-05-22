@@ -230,7 +230,7 @@ return [
              */
             //'port' => 'non_standard_port_number',
             'username' => 'root',
-            'password' => 'root',
+            'password' => 'Motdepasse7',
             'database' => 'medtrucks',
             'encoding' => 'utf8',
             'timezone' => 'UTC',

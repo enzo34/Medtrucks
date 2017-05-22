@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Datasource\ConnectionManager;
 //todo list : integrer la connection a la bdd par cakephp, renvoyer toutes nos variables vers notre vue principale(donc home)
 //vue correspondante a ce controller NOMDETONVIRTUALHOST/Type/TriCentreSante
 class TypeController extends AppController {
@@ -10,9 +11,11 @@ class TypeController extends AppController {
 
 public function TriCentreSante() {
 //connection a la base de donnée, a changer selon notre base de donnée
-  $dbh= new \PDO ("mysql:host=localhost;dbname=medtrucks","root","root");
+  $dbh=ConnectionManager::get('default');
   //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom pharmacie delannoy)
-  $query1 = ($dbh->query("SELECT * FROM Centre where type = 'Centre Social'"))->fetchAll($dbh::FETCH_ASSOC);
+  $query1 = $dbh
+  ->execute("SELECT * FROM Centre where cat_id=1")
+  ->fetchAll('assoc');
   //boucle qui recupere les resultat de la requete et rentre dans un tableau prérempli
   foreach ($query1 as $cs){
   //oblige de passer par des variables a cause des index
@@ -25,14 +28,13 @@ public function TriCentreSante() {
     $coordx=$cs['coorx'];
     $coordy=$cs['coory'];
     //remplissage du tableau avec nos variables
-             $conf1[] = ["type" => "Features",
-                                        "geometry" => [ 'type' => 'Point',
+             $conf1[] = [ "type"=>"Feature",
+                                         "geometry" => [ 'type' => 'Point',
 
-                                        'coordinates' => [ (float)$coordy, (float)$coordx ]],
-                                        "properties" =>["name" => $nom ,"type" => $type ,"adresse" => $adresse]
+                                        'coordinates' => [  (float)$coordx,(float)$coordy ] ],
+                                        "properties" => [ "name" => $nom , "type" => $type ,"adresse" => $adresse ]
                            ];
 
-  //  $conf1="{type: Feature, geometry : { type: Point, coordinates :[$coordy, $coordx ] }, properties: { name: $nom type: $type adresse: $adresse}";
 }
 
 //encode notre tableau en json
@@ -42,7 +44,9 @@ public function TriCentreSante() {
 
 
   //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom ph. launay)
-  $query2 = ($dbh->query("SELECT * FROM Centre WHERE nom = 'PH. LAUNAY' "))->fetchAll($dbh::FETCH_ASSOC);
+  $query2 = $dbh
+  ->execute("SELECT * FROM Centre where cat_id=2")
+  ->fetchAll('assoc');
   foreach ($query2 as $handicapé){
     $id=$handicapé['id'];
     $type=$handicapé['type'];
@@ -63,7 +67,9 @@ public function TriCentreSante() {
 
 
   //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom PHARMACIE DROUET)
-  $query3 = ($dbh->query("SELECT * FROM Centre WHERE nom = 'PHARMACIE DROUET-PHILIPPE ANNE-MARIE' "))->fetchAll($dbh::FETCH_ASSOC);
+  $query3 = $dbh
+  ->execute("SELECT * FROM Centre where cat_id=3")
+  ->fetchAll('assoc');
   foreach ($query3 as $psycho){
     $id=$psycho['id'];
     $type=$psycho['type'];
@@ -83,7 +89,9 @@ public function TriCentreSante() {
 
 
   //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom PHARMACIE EOZENOU)
-  $query4 = ($dbh->query("SELECT * FROM Centre WHERE nom = 'PHARMACIE EOZENOU MARIE-FRANCE'  "))->fetchAll($dbh::FETCH_ASSOC);
+  $query4 = $dbh
+  ->execute("SELECT * FROM Centre where cat_id=4")
+  ->fetchAll('assoc');
   foreach ($query4 as $specialiste){
     $id=$specialiste['id'];
     $type=$specialiste['type'];
@@ -103,7 +111,9 @@ public function TriCentreSante() {
 
 
   //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom PHARMACIE DU PORZAY)
-  $query5 = ($dbh->query("SELECT * FROM Centre WHERE nom = 'EURL PHARMACIE DU PORZAY'  "))->fetchAll($dbh::FETCH_ASSOC);
+  $query5 = $dbh
+  ->execute("SELECT * FROM Centre where cat_id=5")
+  ->fetchAll('assoc');
   foreach ($query5 as $analyse){
     $id=$analyse['id'];
     $type=$analyse['type'];
@@ -125,7 +135,23 @@ public function TriCentreSante() {
 
 //function pour recuperer la liste des different filtres dans la variable $f
 
-    $query6 = ($dbh->query("SELECT DISTINCT type FROM Centre  "))->fetchAll($dbh::FETCH_ASSOC);
+$query6 = $dbh
+->execute("SELECT * FROM Centre where cat_id=6")
+->fetchAll('assoc');
+foreach ($query6 as $analyse){
+  $id=$analyse['id'];
+  $type=$analyse['type'];
+  $adresse=$analyse['rue'].$analyse['cpville'];
+  $nom=$analyse['nom'];
+  $coordx=$analyse['coorx'];
+  $coordy=$analyse['coory'];
+  $conf5[]=["type" => "Features",
+                             "geometry" => [ 'type' => 'Point',
+
+                             'coordinates' => [ (float)$coordy, (float)$coordx ]],
+                             "properties" =>["name" => $nom ,"type" => $type ,"adresse" => $adresse]
+                ];}
+$analyse=json_encode($conf5, JSON_FORCE_OBJECT);
     $this->set('f', $query6);
 }}
 ?>

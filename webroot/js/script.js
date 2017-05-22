@@ -8,6 +8,8 @@ var maPosition = {
 	"geometry": {
 	        "type": "Point",
                 "coordinates": [
+                  -122.084917,
+37.423156
                 ]
 	}
 };
@@ -29,7 +31,7 @@ function getgps(){
 			lng= data.results[0].geometry.location.lng
 
 			maPosition.geometry.coordinates = [lng,lat];
-			map.data.addGeoJson(maPosition);
+
 
 			center();
 		}
@@ -55,5 +57,7 @@ function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 		center: new google.maps.LatLng(0, 0),
           	zoom: 5
+  map.data.addGeoJson(maPosition);
         });
+
 }

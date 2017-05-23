@@ -135,23 +135,35 @@ public function TriCentreSante() {
 
 //function pour recuperer la liste des different filtres dans la variable $f
 
-$query6 = $dbh
-->execute("SELECT * FROM Centre where cat_id=6")
-->fetchAll('assoc');
-foreach ($query6 as $analyse){
-  $id=$analyse['id'];
-  $type=$analyse['type'];
-  $adresse=$analyse['rue'].$analyse['cpville'];
-  $nom=$analyse['nom'];
-  $coordx=$analyse['coorx'];
-  $coordy=$analyse['coory'];
-  $conf5[]=["type" => "Features",
-                             "geometry" => [ 'type' => 'Point',
 
-                             'coordinates' => [ (float)$coordy, (float)$coordx ]],
-                             "properties" =>["name" => $nom ,"type" => $type ,"adresse" => $adresse]
-                ];}
-$analyse=json_encode($conf5, JSON_FORCE_OBJECT);
-    $this->set('f', $query6);
+
+$query6 = $dbh
+  ->execute("SELECT * FROM Centre where cat_id=7")
+  ->fetchAll('assoc');
+  //boucle qui recupere les resultat de la requete et rentre dans un tableau prérempli
+  foreach ($query6 as $cs){
+  //oblige de passer par des variables a cause des index
+    $id=$cs['id'];
+    $type=$cs['type'];
+    $adresse1=$cs['rue'];
+    $adresse2=$cs['cpville'];
+    $adresse=$adresse1.$adresse2;
+    $nom=$cs['nom'];
+    $coordx=$cs['coorx'];
+    $coordy=$cs['coory'];
+    //remplissage du tableau avec nos variables
+             $conf6[] = [ "type"=>"Feature",
+                                         "geometry" => [ 'type' => 'Point',
+
+                                        'coordinates' => [  (float)$coordx,(float)$coordy ] ],
+                                        "properties" => [ "name" => $nom , "type" => $type ,"adresse" => $adresse ]
+                           ];
+
+}
+
+//encode notre tableau en json
+    $centresante=json_encode($conf6);
+  //renvoie la variable $centresante (notre json donc) a la vue sous la forme de la variable $a
+  $this->set('f', $centresante);
 }}
 ?>

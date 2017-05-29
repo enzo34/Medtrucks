@@ -23,26 +23,36 @@
           center: uluru
         });
 
-
-        var second =  map.data.addGeoJson(second);
       }
+</script>
+<script>
 
-    </script>
-
-    <script>
     $("#map").click(function() {
-      var filtre = 1;
 
       $.ajax({
         url: "http://medtrucks.fr/Type/TriCentreSante",
-        data: filtre,
-        method:"GET",
-        dataType: 'JSON',
-        success:{
-            alert("pipi");
-        }
-      });
-    });
+        dataType: "json",
+ //        data: {typehopitaux: "type"},
+         success: function (data) {
+             for (var i = 0; i < data.length; i++) {
+                 var item = data[i];
+                 var feat = {
+                     "type": "Feature",
+                     "id": item.id,
+                     "geometry": {
+                         "type": "point",
+                         "coordinates": [item.coord.lat, item.coord.lng]
+                     }
+                 };
+                 donnees.features.push(feat);
+             }
+             ;
+             map.data.addGeoJson(donnees);
+         }});
+ }
+ $("#zone").click(function () {
+     getpoint();
+ });
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLaAEwqhwWllUQgTmt8LDKhqt9J1qrnnk&callback=initMap">

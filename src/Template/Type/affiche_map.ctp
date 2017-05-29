@@ -27,29 +27,19 @@
 </script>
 <script>
 
-    $("#map").click(function() {
+$("#map").ready(function() {
+      var filtre = 1;
+    $.ajax({
+      url: "http://medtrucks.fr/Type/TriCentreSante",
+      data: filtre,
+      method:"GET",
 
-      $.ajax({
-        url: "http://medtrucks.fr/Type/TriCentreSante",
-        dataType: "json",
- //        data: {typehopitaux: "type"},
-         success: function (data) {
-             for (var i = 0; i < data.length; i++) {
-                 var item = data[i];
-                 var feat = {
-                     "type": "Feature",
-                     "id": item.id,
-                     "geometry": {
-                         "type": "point",
-                         "coordinates": [item.coord.lat, item.coord.lng]
-                     }
-                 };
-                 donnees.features.push(feat);
-             }
-             ;
-             map.data.addGeoJson(donnees);
-         }});
- }
+     success: function(msg){
+       alert(msg);
+map.data.addGeoJson(msg);
+      }
+    });
+  });
  $("#zone").click(function () {
      getpoint();
  });

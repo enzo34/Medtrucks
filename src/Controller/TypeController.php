@@ -51,7 +51,7 @@ public function TriCentreSante() {
                                         'coordinates' => array(  (float)$coordx,(float)$coordy )),
                                         "properties" => array( "name" => $nom , "type" => $type ,"adresse" => $adresse )
                           ) ;
-break;
+
 }
 $test= array(
   'type' => 'FeatureCollection',

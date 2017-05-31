@@ -1,51 +1,18 @@
-# CakePHP Application Skeleton
+Api medtrucks de géolocalisation des hopitaux , qui permet de filtrer les différents type de batiments .
 
-[![Build Status](https://img.shields.io/travis/cakephp/app/master.svg?style=flat-square)](https://travis-ci.org/cakephp/app)
-[![License](https://img.shields.io/packagist/l/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
+l'api fonctionne sur un modele mvc ce basant sur cakephp et google maps api, avec le controller dans src/controller/TypeController.php pour recuperer les données de la base
+la vue est dans src/templates/type/affiche_map.ctp et permet d'afficher ce que l'on veut
+le css pour les graphisme ce trouve dans webroot/css/mep.css tandis que le js ce trouve dans webroot/js et permet de faire des cripts pour les menu ou les fonctions .
 
-A skeleton for creating applications with [CakePHP](http://cakephp.org) 3.x.
+Architecture de cakephp donc langage principalement jquery/php/html/css avec du mysql pour la base de donnée
 
-The framework source code can be found here: [cakephp/cakephp](https://github.com/cakephp/cakephp).
+Modifier le "app.php" dans le dossier config, a partir de la ligne 220 en fonction du nom de votre hebergeur .(ici phpmyadmin).
 
-## Installation
+modifier le controller dans "src/Templates/Type/affiche_map.ctp" ligne 69 "var VH =  METTRE ICI LE NOM DE VOTRE VIRTUALHOST"
 
-1. Download [Composer](http://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist cakephp/app [app_name]`.
 
-If Composer is installed globally, run
 
-```bash
-composer create-project --prefer-dist cakephp/app
-```
-
-In case you want to use a custom app dir name (e.g. `/myapp/`):
-
-```bash
-composer create-project --prefer-dist cakephp/app myapp
-```
-
-You can now either use your machine's webserver to view the default home page, or start
-up the built-in webserver with:
-
-```bash
-bin/cake server -p 8765
-```
-
-Then visit `http://localhost:8765` to see the welcome page.
-
-## Update
-
-Since this skeleton is a starting point for your application and various files
-would have been modified as per your needs, there isn't a way to provide
-automated upgrades, so you have to do any updates manually.
-
-## Configuration
-
-Read and edit `config/app.php` and setup the `'Datasources'` and any other
-configuration relevant for your application.
-
-## Layout
-
-The app skeleton uses a subset of [Foundation](http://foundation.zurb.com/) CSS
-framework by default. You can, however, replace it with any other library or
-custom styles.
+Chef de projet : Cavelloux Enzo
+Groupe : Amini Qais
+         Avitabile Marvin
+         Duban Remi

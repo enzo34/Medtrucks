@@ -5,8 +5,8 @@ use App\Controller\AppController;
 use Cake\Datasource\ConnectionManager;
 Use Cake\TestSuite\Stub\Response;
 
-//todo list : integrer la connection a la bdd par cakephp, renvoyer toutes nos variables vers notre vue principale(donc home)
-//vue correspondante a ce controller NOMDETONVIRTUALHOST/Type/TriCentreSante
+
+
 class TypeController extends AppController {
 
 
@@ -17,21 +17,17 @@ public function initialize()
               $this->loadComponent('RequestHandler');
 
           }
+
 public function afficheMap(){
 
 }
+
 public function TriCentreSante() {
-
-
 //connection a la base de donnée, a changer selon notre base de donnée
   $dbh=ConnectionManager::get('default');
-  //commande pour executer du sql dans la bdd et recuperer les info que l'on veut (ici,tout ce qui a pour nom pharmacie delannoy)
-  $query1 = $dbh
-  ->execute("SELECT * FROM Centre where cat_id=1")
-
-  ->fetchAll('assoc');
+  //commande pour executer du sql dans la bdd et recuperer les info que l'on veut
+  $query1 = $dbh->execute("SELECT * FROM Centre where cat_id=1")->fetchAll('assoc');
   //boucle qui recupere les resultat de la requete et rentre dans un tableau prérempli
-
 
   foreach ($query1 as $cs){
   //oblige de passer par des variables a cause des index
@@ -44,7 +40,6 @@ public function TriCentreSante() {
     $coordx=$cs['coorx'];
     $coordy=$cs['coory'];
     //remplissage du tableau avec nos variables
-
              $geojson[]= array("type"=>"Feature",
                                          "geometry" => array( 'type' => 'Point',
 
@@ -58,11 +53,12 @@ $test= array(
   'features' => $geojson);
 //encode notre tableau en json
     $centresante=json_encode($test);
+    //renvoie notre json a la vu triCentreSante pour recuperer le tout avec la fonction ajax
 return new Response (['body'=> $centresante]);
 
-  //renvoie la variable $centresante (notre json donc) a la vue sous la forme de la variable $a
-//  $this->set('a', $centresante);
 }
+
+//meme fonction que plus haut, mais pour les batiments relié aux psycho
 public function TriPsycho() {
   $dbh=ConnectionManager::get('default');
   $query1 = $dbh->execute("SELECT * FROM Centre where cat_id=2")->fetchAll('assoc');
@@ -79,6 +75,7 @@ $test= array(
 return new Response (['body'=> $centresante]);
 }
 
+//meme fonction que plus haut, mais pour les batiments relié aux handicapé
 public function TriHandicape() {
   $dbh=ConnectionManager::get('default');
   $query1 = $dbh->execute("SELECT * FROM Centre where cat_id=3")->fetchAll('assoc');
@@ -95,6 +92,7 @@ $test= array(
 return new Response (['body'=> $centresante]);
 }
 
+//meme fonction que plus haut, mais pour les batiments relié aux spécialiste
 public function TriSpecialiste() {
   $dbh=ConnectionManager::get('default');
   $query1 = $dbh->execute("SELECT * FROM Centre where cat_id=4")->fetchAll('assoc');
@@ -110,6 +108,8 @@ $test= array(
     $centresante=json_encode($test);
 return new Response (['body'=> $centresante]);
 }
+
+//meme fonction que plus haut, mais pour les batiments relié aux batiment qui peuvent ce deplacer
 public function TriMobile() {
   $dbh=ConnectionManager::get('default');
   $query1 = $dbh->execute("SELECT * FROM Centre where cat_id=5")->fetchAll('assoc');
@@ -125,6 +125,8 @@ $test= array(
     $centresante=json_encode($test);
 return new Response (['body'=> $centresante]);
 }
+
+//meme fonction que plus haut, mais pour les batiments inclassable
 public function TriDivers() {
   $dbh=ConnectionManager::get('default');
   $query1 = $dbh->execute("SELECT * FROM Centre where cat_id=7")->fetchAll('assoc');
@@ -140,6 +142,8 @@ $test= array(
     $centresante=json_encode($test);
 return new Response (['body'=> $centresante]);
 }
+
+//liste de tout les type de batiments 
 public function liste()
         {
             $prix = $this->request->data['cat_id'];

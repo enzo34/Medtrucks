@@ -63,6 +63,83 @@ return new Response (['body'=> $centresante]);
   //renvoie la variable $centresante (notre json donc) a la vue sous la forme de la variable $a
 //  $this->set('a', $centresante);
 }
+public function TriPsycho() {
+  $dbh=ConnectionManager::get('default');
+  $query1 = $dbh->execute("SELECT * FROM Centre where cat_id=2")->fetchAll('assoc');
+  foreach ($query1 as $cs){
+    $id=$cs['id'];    $type=$cs['type'];    $adresse1=$cs['rue'];    $adresse2=$cs['cpville'];    $adresse=$adresse1.$adresse2;
+    $nom=$cs['nom'];    $coordx=$cs['coorx'];    $coordy=$cs['coory'];
+             $geojson[]= array("type"=>"Feature","geometry" => array( 'type' => 'Point','coordinates' => array(  (float)$coordx,(float)$coordy )),
+"properties" => array( "name" => $nom , "type" => $type ,"adresse" => $adresse ));
+}
+$test= array(
+  'type' => 'FeatureCollection',
+  'features' => $geojson);
+    $centresante=json_encode($test);
+return new Response (['body'=> $centresante]);
+}
+
+public function TriHandicape() {
+  $dbh=ConnectionManager::get('default');
+  $query1 = $dbh->execute("SELECT * FROM Centre where cat_id=3")->fetchAll('assoc');
+  foreach ($query1 as $cs){
+    $id=$cs['id'];    $type=$cs['type'];    $adresse1=$cs['rue'];    $adresse2=$cs['cpville'];    $adresse=$adresse1.$adresse2;
+    $nom=$cs['nom'];    $coordx=$cs['coorx'];    $coordy=$cs['coory'];
+             $geojson[]= array("type"=>"Feature","geometry" => array( 'type' => 'Point','coordinates' => array(  (float)$coordx,(float)$coordy )),
+"properties" => array( "name" => $nom , "type" => $type ,"adresse" => $adresse ));
+}
+$test= array(
+  'type' => 'FeatureCollection',
+  'features' => $geojson);
+    $centresante=json_encode($test);
+return new Response (['body'=> $centresante]);
+}
+
+public function TriSpecialiste() {
+  $dbh=ConnectionManager::get('default');
+  $query1 = $dbh->execute("SELECT * FROM Centre where cat_id=4")->fetchAll('assoc');
+  foreach ($query1 as $cs){
+    $id=$cs['id'];    $type=$cs['type'];    $adresse1=$cs['rue'];    $adresse2=$cs['cpville'];    $adresse=$adresse1.$adresse2;
+    $nom=$cs['nom'];    $coordx=$cs['coorx'];    $coordy=$cs['coory'];
+             $geojson[]= array("type"=>"Feature","geometry" => array( 'type' => 'Point','coordinates' => array(  (float)$coordx,(float)$coordy )),
+"properties" => array( "name" => $nom , "type" => $type ,"adresse" => $adresse ));
+}
+$test= array(
+  'type' => 'FeatureCollection',
+  'features' => $geojson);
+    $centresante=json_encode($test);
+return new Response (['body'=> $centresante]);
+}
+public function TriMobile() {
+  $dbh=ConnectionManager::get('default');
+  $query1 = $dbh->execute("SELECT * FROM Centre where cat_id=5")->fetchAll('assoc');
+  foreach ($query1 as $cs){
+    $id=$cs['id'];    $type=$cs['type'];    $adresse1=$cs['rue'];    $adresse2=$cs['cpville'];    $adresse=$adresse1.$adresse2;
+    $nom=$cs['nom'];    $coordx=$cs['coorx'];    $coordy=$cs['coory'];
+             $geojson[]= array("type"=>"Feature","geometry" => array( 'type' => 'Point','coordinates' => array(  (float)$coordx,(float)$coordy )),
+"properties" => array( "name" => $nom , "type" => $type ,"adresse" => $adresse ));
+}
+$test= array(
+  'type' => 'FeatureCollection',
+  'features' => $geojson);
+    $centresante=json_encode($test);
+return new Response (['body'=> $centresante]);
+}
+public function TriDivers() {
+  $dbh=ConnectionManager::get('default');
+  $query1 = $dbh->execute("SELECT * FROM Centre where cat_id=7")->fetchAll('assoc');
+  foreach ($query1 as $cs){
+    $id=$cs['id'];    $type=$cs['type'];    $adresse1=$cs['rue'];    $adresse2=$cs['cpville'];    $adresse=$adresse1.$adresse2;
+    $nom=$cs['nom'];    $coordx=$cs['coorx'];    $coordy=$cs['coory'];
+             $geojson[]= array("type"=>"Feature","geometry" => array( 'type' => 'Point','coordinates' => array(  (float)$coordx,(float)$coordy )),
+"properties" => array( "name" => $nom , "type" => $type ,"adresse" => $adresse ));
+}
+$test= array(
+  'type' => 'FeatureCollection',
+  'features' => $geojson);
+    $centresante=json_encode($test);
+return new Response (['body'=> $centresante]);
+}
 public function liste()
         {
             $prix = $this->request->data['cat_id'];
